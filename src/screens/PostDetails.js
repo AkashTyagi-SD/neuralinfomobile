@@ -57,9 +57,9 @@ function PostDetails() {
                 <Text style={style.heading}>Email:</Text>
                   <Text style={style.title}>{item.email}</Text>
                 </View>
-                <View style={style.postdetailbody}>
+                <View style={style.postdetailbody2}>
                 <Text style={style.heading}>Comment:</Text>
-                  <Text style={style.title}>{item.body}</Text>
+                  <Text  style={style.title}>{item.body}</Text>
                 </View>
                 </View>
              
@@ -86,6 +86,7 @@ const style = StyleSheet.create({
     flex: 1,
     backgroundColor: "white",
     padding: 15,
+    
     marginBottom: 10,
     borderRadius: 16,
   },
@@ -103,9 +104,15 @@ const style = StyleSheet.create({
     alignItems: "center",
     fontSize: 14,
   },
+
   postdetailbody:{
     flexDirection:'row',
-    marginVertical:1
+    marginVertical:1,
+  },
+  postdetailbody2:{
+    flexDirection:'row',
+    marginVertical:1,
+    flexWrap:'wrap'
   }
 });
 

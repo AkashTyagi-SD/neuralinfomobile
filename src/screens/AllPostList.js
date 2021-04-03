@@ -78,7 +78,7 @@ function AllPostList() {
                 }}
               >
                 <View style={style.container}>
-                <Text style={style.heading}>Title :</Text>
+                <Text style={style.heading}>Title: </Text>
                   <Text style={style.title}>{item.title}</Text>
                 </View>
               </TouchableOpacity>
@@ -103,6 +103,8 @@ const style = StyleSheet.create({
   },
   container: {
     flex: 1,
+    flexDirection:'row',
+    flexWrap:'wrap',
     backgroundColor: "white",
     padding: 15,
     marginBottom: 10,
